@@ -8,5 +8,10 @@ import { HeaderComponent } from '../header/header.component';
   styleUrl: './main-layout.component.scss',
 })
 export class MainLayoutComponent {
-  title = ' Titulo desde main';
+  title = 0;
+
+  emmitReceived(event: number) {
+    this.title += event;
+    console.log(this.title);
+  }
 }
