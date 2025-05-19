@@ -1,3 +1,5 @@
-<p>{{ beer?.name }}</p>
-<p>{{ beer?.description }}</p>
-<img [src]="beerImage" class="img-fluid rounded-top" alt="beer image" />
+
+<app-beer-info
+  [beer]="randomBeer()"
+  [imagenUrl]="beerImage()"
+></app-beer-info>
